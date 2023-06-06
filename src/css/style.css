@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+/* Additional styles */
+@import "additional-styles/utility-patterns.css";
+@import "additional-styles/range-slider.css";
+@import "additional-styles/toggle-switch.css";
+@import "additional-styles/theme.css";
+
+@import "tailwindcss/utilities";
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+  display: none;
+}
+/* .relative{
+    background: linear-gradient(0.71deg, rgba(161, 96, 247, 0.54) 1.93%, rgba(161, 96, 247, 0.156767) 53.62%, rgba(161, 96, 247, 0) 99.41%);
+filter: blur(400px);
+} */
+body {
+  font-family: "Outfit" !important;
+}
+
+html {
+  font-family: "Outfit";
+}
+h1{
+  font-family: "Outfit";
+}
+
+/* @media screen and (min-width: 414px) {
+    .sigil-headings {
+      font-size: 80px;
+    }
+  }
+   */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .sigil-headings {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .sigil-buttons{
+    width: 180px !important;
+    height: 80px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .sigil-headings {
+    font-size: 30px;
+    line-height: normal !important;
+  }
+}
+
+.sigil-headings {
+  /* font-size: 30px ; */
+  font-family: "Outfit" !important;
+}
+
+.getnum{
+  border: none;
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 84px;
+  text-align: center;
+}
+input[type="number"]::placeholder {
+  text-align: center;
+}
+.getnum:hover,.getnum:active{
+  border: none;
+  outline: none;
+}
+
+
+@media screen and (max-width: 375px) {
+  .trusted-img {
+    width:360px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sigil-buttons{
+    width: 220px !important;
+    height: 80px !important;
+    font-size: 14pt !important;
+    text-align: center;
+  }
+  .tabs-img{
+    width: 340px !important;
+    height: 280px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* margin-left: 90px !important; */
+    vertical-align: middle;
+    /* display: none; */
+  }
+  .arrow-img{
+    display: none;
+  }
+  .copy-cards{
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+  .testi-cards{
+    height: 800px !important;
+  }
+  .increase-head{
+    width: 320px !important;
+  }
+  .up-down{
+    display: none;
+  }
+  .rm-imgs{
+    width: 180px;
+    height: 180px;
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trusted-img {
+    width:360px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sigil-buttons{
+    width: 220px !important;
+    height: 80px !important;
+    font-size: 14pt !important;
+    text-align: center;
+  }
+  .tabs-img{
+    width: 340px !important;
+    height: 280px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* margin-left: 90px !important; */
+    vertical-align: middle;
+    /* display: none; */
+  }
+  .arrow-img{
+    display: none;
+  }
+  .copy-cards{
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+  .testi-cards{
+    height: 800px !important;
+  }
+  .increase-head{
+    width: 320px !important;
+  }
+  .up-down{
+    display: none;
+  }
+  .rm-imgs{
+    width: 180px;
+    height: 180px;
+    display: none;
+  }
+}
